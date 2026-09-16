@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>tema.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        button {
+            font-size: 16px;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+
+        /* Tema claro (padrão) */
+        body.claro {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Tema escuro */
+        body.escuro {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        body.escuro button {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #555;
+        }
+    </style>
+</head>
+<body class="claro">
+
+    <h1>Modo Claro/Escuro</h1>
+
+    <button onclick="mudarTema()">Mudar Tema</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>presenca.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 30px;
+        }
+        ul {
+            list-style: none;
+            display: inline-block;
+            text-align: left;
+            padding: 0;
+        }
+        li {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+        button {
+            background-color: #2e9e44;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #257a36;
+        }
+        #resultado {
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+        .presente {
+            color: green;
+            font-weight: bold;
+        }
+        .ausente {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>presenca.html</h1>
+
+    <ul id="lista">
+        <li><label><input type="checkbox" class="presenca" value="João"> João</label></li>
+        <li><label><input type="checkbox" class="presenca" value="Márcio"> Márcio</label></li>
+        <li><label><input type="checkbox" class="presenca" value="Fabiana"> Fabiana</label></li>
+        <li><label><input type="checkbox" class="presenca" value="Jorge"> Jorge</label></li>
+        <li><label><input type="checkbox" class="presenca" value="Silvana"> Silvana</label></li>
+        <li><label><input type="checkbox" class="presenca" value="Luiz"> Luiz</label></li>
+        <li><label><input type="checkbox" class="presenca" value="Carlos"> Carlos</label></li>
+        <li><label><input type="checkbox" class="presenca" value="Pablo"> Pablo</label></li>
+    </ul>
+
+    <br>
+    <button onclick="confirmarPresenca()">Confirmar Presença</button>
+
+    <div id="resultado">
+        <h2>Resultado</h2>
+        <p id="presentes"></p>
+        <p id="ausentes"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

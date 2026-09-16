@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>verificadorIdade.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b3a6f0;
+            text-align: center;
+            margin: 0;
+            padding: 40px 0;
+        }
+        .card {
+            background-color: white;
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 10px;
+            padding-bottom: 20px;
+            overflow: hidden;
+        }
+        .titulo {
+            background-color: #b3a6f0;
+            color: white;
+            padding: 15px;
+            margin: 0;
+        }
+        .conteudo {
+            padding: 15px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 60px;
+        }
+        button {
+            padding: 5px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        #resultado {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        #foto {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 15px;
+            display: none;
+        }
+        footer {
+            color: white;
+            font-style: italic;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2 class="titulo">Verificador de Idade</h2>
+        <div class="conteudo">
+            <label>Ano de Nascimento: <input type="number" id="anoNascimento" value="1994"></label>
+            <br><br>
+            <label>Sexo:
+                <input type="radio" name="sexo" value="masculino"> Masculino
+                <input type="radio" name="sexo" value="feminino" checked> Feminino
+            </label>
+            <br><br>
+            <button onclick="verificar()">Verificar</button>
+
+            <p id="resultado"></p>
+
+            <img id="foto" src="" alt="Foto">
+        </div>
+    </div>
+
+    <footer>&copy; Uniderp</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
